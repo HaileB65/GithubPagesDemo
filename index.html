@@ -16,6 +16,27 @@
 <br>
 <footer id="copyright"></footer>
 
+<br>
+<h1>In Line Javascript Example</h1>
+
+    <p id="change-colour"> I'm blue :( </p>
+
+    <button type="button" id="button">Change Font Color</button>
+
+
+
+    <script>
+      // ===== HERE IS A SCRIPT ====
+      function changeColor () {
+        document.getElementById("change-colour").style.color = "blue";
+        document.getElementById("change-colour").innerHTML = "blue";
+      };
+
+      document.getElementById("button")
+        .setAttribute("onClick", "changeColor()")
+    </script>
+<br>
+    
 </body>
 <script src="script.js"></script>
 </html>
